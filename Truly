@@ -3,8 +3,24 @@ local Window = Library.CreateLib("TSB Moveset Anims", "BloodTheme")
 local Tab = Window:NewTab("Base Moveset")
 Section:NewLabel("Nothing Yet!")
 
+Section:NewButton("Five Season's", "Startup", function()
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://18460863844"
+sound.Parent = game.Players.LocalPlayer.Character.Torso
+sound:Play()
+sound.Volume = 1.3
+end)
+
 local Tab = Window:NewTab("KJ's Awakening")
 local Section = Tab:NewSection("Nothing Yet!")
+
+Section:NewButton("Five Season's", "Startup", function()
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://18460863844"
+sound.Parent = game.Players.LocalPlayer.Character.Torso
+sound:Play()
+sound.Volume = 1.3
+end)
 
 local Tab = Window:NewTab("20 Series Moveset")
 local Section = Tab:NewSection("New Added")
