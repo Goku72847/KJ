@@ -1,0 +1,45 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("TSB Moveset Anims", "BloodTheme")
+local Tab = Window:NewTab("Base Moveset")
+Section:NewLabel("Nothing Yet!")
+
+local Tab = Window:NewTab("KJ's Awakening")
+local Section = Tab:NewSection("Nothing Yet!")
+
+local Tab = Window:NewTab("20 Series Moveset")
+local Section = Tab:NewSection("New Added")
+
+Section:NewButton("Five Season's", "Startup", function()
+    local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://18462892217"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(0)
+
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://18460863844"
+sound.Parent = game.Players.LocalPlayer.Character.Torso
+sound:Play()
+sound.Volume = 1.3
+wait(0)
+
+local soundeffect2 = Instance.new("Sound")
+soundeffect2.SoundId = "rbxassetid://18460952794"
+soundeffect2.Parent = game.Players.LocalPlayer.Character.Torso
+soundeffect2:Play()
+soundeffect2.Volume = 0.50
+wait(3.25)
+
+local soundeffect = Instance.new("Sound")
+soundeffect.SoundId = "rbxassetid://18460893321"
+soundeffect.Parent = game.Players.LocalPlayer.Character.Head
+soundeffect:Play()
+soundeffect.Volume = 1.2
+end)
