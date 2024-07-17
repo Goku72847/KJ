@@ -2,9 +2,13 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("The Strongest Battlegrounds")
 
-local serv = win:Server("I'm Getting Sick Of This..", "😑")
+local serv = win:Server("KJ", "")
 
 local btns = serv:Channel("KJ")
+
+local lbls = serv:Channel("Ultimate Moves")
+
+lbls:Label("Five Season's")
 
 btns:Button("Five Season's 1st", function()
 local player = game.Players.LocalPlayer
