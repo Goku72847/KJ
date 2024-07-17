@@ -6,7 +6,7 @@ local serv = win:Server("I'm Getting Sick Of This..", "😑")
 
 local btns = serv:Channel("KJ")
 
-btns:Button("inf jump", function()
+btns:Button("Five Season's 1st", function()
 local player = game.Players.LocalPlayer
 repeat wait() until player.Character.Humanoid
 local humanoid = player.Character.Humanoid
