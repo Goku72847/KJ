@@ -48,6 +48,31 @@ end)
 
 btns:Seperator()
 
-btns:Button("Murasaki", function()
-DiscordLib:Notification("Notification", "Max level!", "Okay!")
+btns:Button("20-20-20 Dropkick", function()
+local player = game.Players.LocalPlayer
+repeat wait() until player.Character.Humanoid
+local humanoid = player.Character.Humanoid
+local character = player.Character or player.CharacterAdded:Wait()
+local UserInputService = game:GetService("UserInputService")
+
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://17354976067"
+
+local playAnim = humanoid:LoadAnimation(anim)
+playAnim:Play()
+wait(0)
+
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://17429233290"
+sound.Parent = game.Players.LocalPlayer.Character.Torso
+sound:Play()
+sound.Volume = 1.3
+wait(0)
+
+local soundeffect2 = Instance.new("Sound")
+soundeffect2.SoundId = "rbxassetid://17356346310"
+soundeffect2.Parent = game.Players.LocalPlayer.Character.Torso
+soundeffect2:Play()
+soundeffect2.Volume = 1
+DiscordLib:Notification("Notification", "Work In Progress", "Okay, Thanks!")
 end)
